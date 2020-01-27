@@ -25,7 +25,7 @@ SECRET_KEY = '%6tv!x#cy0$5a^a$h)&3kts$*u!mgg=h5z!(v6780*)996t52w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', 'localhost', 'blooming-spire-18503.herokuapp.com']
 
 
 # Application definition
