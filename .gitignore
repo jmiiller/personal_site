@@ -45,10 +45,11 @@ coverage.xml
 # Django stuff:
 *.log
 *.pot
+/staticfiles/*
 
 # Sphinx documentation
 docs/_build/
 
-pyvenv.cfg
-
+# Pycharm stuff:
 /.idea/*
+pyvenv.cfg
