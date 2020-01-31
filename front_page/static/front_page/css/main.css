@@ -59,9 +59,9 @@ table {
 */
 
 body {
-  color: #888;
+  color: #000;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #293f50;
+  background-color: #19181A;
 }
 
 /*
@@ -146,10 +146,7 @@ body {
 }
 
 .row-alt {
-  background: #cbe2c1;
-  background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
-  background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
-  background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background: #fff;
   padding: 44px 0 22px 0;
 }
 
@@ -163,8 +160,8 @@ h1, h2, h3, h4, h5, p {
   margin-bottom: 22px;
 }
 
-h1, h2, h3, h4 {
-  color: #648880;
+h1, h2, h3, h4, h5 {
+  color: #000;
 }
 
 h1 {
@@ -186,7 +183,6 @@ h4 {
 }
 
 h5 {
-  color: #a9b2b9;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -194,6 +190,7 @@ h5 {
 
 p {
   font-size: 18px;
+  text-align: center;
 }
 
 strong {
@@ -219,6 +216,15 @@ cite, em {
   line-height: 33px;
 }
 
+.lead .underline-red {
+  border-bottom: #a16e83 solid 4px;
+  display: inline;
+}
+
+.lead h1 {
+  color: #000;
+}
+
 /*
   ========================================
   Links
@@ -226,20 +232,16 @@ cite, em {
 */
 
 a:hover {
-  color: #a9b2b9;
+  color: #479761;
 }
 
 a {
-  color: #648880;
+  color: #fff;
   text-decoration: none;
 }
 
 p a {
   border-bottom: 1px solid #dfe2e5;
-}
-
-.project-link a:hover h3 {
-  color: #a9b2b9;
 }
 
 .primary-header a, .primary-footer a,
@@ -250,7 +252,7 @@ p a {
 }
 
 .primary-header a:hover, .primary-footer a:hover {
-  color: #648880;
+  color: #479761;
 }
 
 /*
@@ -277,7 +279,7 @@ p a {
 
 .btn-alt:hover {
   background-color: #fff;
-  color: #648880;
+  color: #000;
 }
 
 /*
@@ -291,15 +293,25 @@ p a {
   line-height: 44px;
   padding: 22px 80px 66px 80px;
   text-align: center;
+  display: table;
+  height: 100vh;
 }
 
 .hero h2 {
   font-size: 36px;
+  color: #fff;
+  font-weight: 700;
 }
 
 .hero p {
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 400;
+  color: #fff;
+}
+
+.vertically-center {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /*
@@ -309,8 +321,6 @@ p a {
 */
 
 .logo {
-  color: #fff;
-  border-top: 4px solid #648880;
   float: left;
   font-size: 48px;
   font-weight: 100;
@@ -318,11 +328,17 @@ p a {
   line-height: 44px;
   padding: 40px 0 22px 0;
   text-transform: uppercase;
+  color: #fff;
 }
 
 .tagline {
   margin: 66px 0 22px 0;
   text-align: right;
+  color: #fff;
+}
+
+.white-border-top {
+  border-top: #fff solid 2px;
 }
 
 /*
@@ -369,4 +385,15 @@ p a {
 ul.horizontal-list li {
   display: inline;
   margin: 0 30px 0 30px;
+}
+
+/*
+  ========================================
+  Background Images
+  ========================================
+*/
+
+.space-background {
+  background: url("../images/nathan-anderson-space.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
