@@ -217,13 +217,10 @@ cite, em {
   line-height: 33px;
 }
 
-.lead .underline-red {
-  border-bottom: #a16e83 solid 4px;
-  display: inline;
-}
-
 .lead h1 {
   color: #000;
+  border-bottom: #a16e83 solid 4px;
+  display: inline;
 }
 
 /*
