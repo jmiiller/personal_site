@@ -59,7 +59,7 @@ table {
 */
 
 body {
-  color: #000;
+  color: #fff;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #19181A;
   min-width: 960px;
@@ -159,10 +159,7 @@ body {
 
 h1, h2, h3, h4, h5, p {
   margin-bottom: 22px;
-}
-
-h1, h2, h3, h4, h5 {
-  color: #000;
+  color: #fff;
 }
 
 h1 {
@@ -218,7 +215,6 @@ cite, em {
 }
 
 .lead h1 {
-  color: #000;
   border-bottom: #a16e83 solid 4px;
   display: inline;
 }
@@ -244,7 +240,6 @@ p a {
 
 .primary-header a, .primary-footer a,
 .primary-header span {
-  color: #fff;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -277,7 +272,7 @@ p a {
 
 .btn-alt:hover {
   background-color: #fff;
-  color: #000;
+  color: #19181A;
 }
 
 /*
@@ -287,7 +282,6 @@ p a {
 */
 
 .hero {
-  color: #fff;
   line-height: 44px;
   padding: 22px 80px 66px 80px;
   text-align: center;
@@ -297,14 +291,12 @@ p a {
 
 .hero h2 {
   font-size: 36px;
-  color: #fff;
   font-weight: 700;
 }
 
 .hero p {
   font-size: 24px;
   font-weight: 400;
-  color: #fff;
 }
 
 .vertically-center {
@@ -326,13 +318,11 @@ p a {
   line-height: 44px;
   padding: 40px 0 22px 0;
   text-transform: uppercase;
-  color: #fff;
 }
 
 .tagline {
   margin: 66px 0 22px 0;
   text-align: right;
-  color: #fff;
 }
 
 .white-border-top {
@@ -363,7 +353,6 @@ p a {
 */
 
 .primary-footer {
-  colour: #648880;
   font-size: 14px;
   padding-top: 44px;
   padding-bottom: 44px;
