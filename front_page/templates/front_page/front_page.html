@@ -9,11 +9,16 @@
         <link rel="stylesheet" href="{% static 'front_page/css/main.css' %}">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script type="text/javascript">
+            particlesJS.load('particles-js', "{% static 'front_page/particlejs/particles.json' %}", function() {
+                console.log('callback - particles.js config loaded');
+            });
+        </script>
     </head>
 
     <body>
 
-        <div class="space-background">
             <section id="cover-page" class="hero container">
                 <div class="vertically-center">
                     <h2>Jeff Miiller</h2>
@@ -27,8 +32,9 @@
                     <a class="btn btn-alt" href="https://github.com/jmiiller">Find Me On Github</a>
                 </div>
 
+                <div id="particles-js"></div>
             </section>
-        </div>
+
 
         <div class="white-border-top">
             <header class="primary-header container group">
