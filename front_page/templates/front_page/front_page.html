@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="{% static 'front_page/css/main.css' %}">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script>
+            ScrollReveal({ reset: true, delay: 100, distance: '25px', duration: 1000, origin: "left"});
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
         <script type="text/javascript">
             particlesJS.load('particles-js', "{% static 'front_page/particlejs/particles.json' %}", function() {
@@ -18,47 +22,46 @@
     </head>
 
     <body>
+        <div class="hero container">
+            <div class="vertically-center">
+                <section id="cover-page">
+                <h2>Jeff Miiller</h2>
+                <p>Aspiring
+                    <span class="typer" id="intro" data-words="Software Engineer, Data Vizzer, Philosophy Geek"
+                          data-colors="#ffffff"
+                          data-delay="100"></span>
+                    <span class="cursor" data-owner="intro"></span>
+                    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+                </p>
 
-            <section id="cover-page" class="hero container">
-                <div class="vertically-center">
-                    <h2>Jeff Miiller</h2>
-                    <p>Aspiring
-                        <span class="typer" id="intro" data-words="Software Engineer, Data Vizzer, Philosophy Geek"
-                                                data-colors="#ffffff"
-                                                data-delay="100"></span>
-                        <span class="cursor" data-owner="intro"></span>
-                        <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-                    </p>
-
-                    <div class="table">
-                        <ul class="horizontal-list">
-                            <li>
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/jmiiller">
-                                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jeff-miiller/">
-                                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="mailto:jeffrey.miiller@gmail.com">
-                                    <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
+                <div class="table">
+                    <ul class="horizontal-list">
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/jmiiller">
+                                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jeff-miiller/">
+                                <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:jeffrey.miiller@gmail.com">
+                                <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div id="particles-js"></div>
-            </section>
+                </section>
+
+            </div>
+            <div id="particles-js"></div>
+        </div>
 
 
         <div class="white-border-top">
-            <header class="primary-header container group">
+            <header id="header" class="primary-header container group">
                 <h1 class="logo">Jeff <br> Miiller</h1>
                 <h3 class="tagline">Web Developer And Philosophy Nerd</h3>
                 <nav class="nav primary-nav">
@@ -67,35 +70,25 @@
             </header>
         </div>
 
-        <section id="about-me" class="row-alt">
-            <div class="lead container">
-                <h1>About Me</h1>
-            </div>
+        <section id="about-me">
+            <section class="row-alt">
+                <div class="lead container">
+                    <h1>About Me</h1>
+                </div>
+            </section>
+
+            <section class="row">
+                <div class="container">
+                    <p>
+                        I am an aspiring software engineer and data vizzer who cares deeply about promoting truth in society.
+                        Journalism is essential to this goal. I intend to support this endeavour in any way I can.
+                    </p>
+
+                </div>
+            </section>
         </section>
 
-        <section class="row">
-            <div class="container">
-                <p>
-                    I am an aspiring software engineer and data vizzer who cares deeply about promoting truth in society.
-                    Journalism is essential to this goal. I intend to support this endeavour in any way I can.
-                </p>
-
-                <p>
-                    I love to solve problems, philosophical and technical ones alike, and excel in decomposing complex systems/problems into discrete, simple, and concise pieces.
-                    I have strong technical abilities developed through my studies in Computer Science and sixteen months of professional software development experience.
-                    I pair these technical skills with excellent written and verbal communication skills developed through my academic studies in Philosophy.
-                </p>
-
-                <p>
-                    I have my sights set on a pursuing a career in Web Development. I am currently self-teaching myself in Python, Django, HTML, CSS, and JavaScript. React is next on my radar.
-                    Along with this self-teaching, I bring experience building Continuous Integration and Continuous Delivery systems and software development in Java, HTML, and CSS.
-                    I am hoping to leverage these skills to work on projects important for the progression of society and the well-being of others.
-                </p>
-
-            </div>
-        </section>
-
-        <footer class="primary-footer container">
+        <footer id="footer" class="primary-footer container">
 
             <div class="table">
                 <ul class="horizontal-list">
@@ -121,6 +114,13 @@
             </div>
 
         </footer>
-    </body>
 
+        <script type="text/javascript">
+            ScrollReveal().reveal("#cover-page");
+            ScrollReveal().reveal("#header");
+            ScrollReveal().reveal("#about-me");
+            ScrollReveal().reveal("#footer");
+        </script>
+
+    </body>
 </html>
