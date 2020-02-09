@@ -6,12 +6,15 @@
     <head>
         <meta charset="utf-8">
         <title>Jeff Miiller</title>
+
         <link rel="stylesheet" href="{% static 'front_page/css/main.css' %}">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/c36b4dfd9f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
         <script src="https://unpkg.com/scrollreveal@4"></script>
         <script>
-            ScrollReveal({ reset: true, delay: 100, distance: '25px', duration: 1000, origin: "left"});
+            ScrollReveal({ reset: true, delay: 250, distance: '25px', duration: 1000});
         </script>
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
         <script type="text/javascript">
@@ -19,6 +22,7 @@
                 console.log('callback - particles.js config loaded');
             });
         </script>
+
     </head>
 
     <body>
@@ -34,25 +38,30 @@
                     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
                 </p>
 
-                <div class="table">
-                    <ul class="horizontal-list">
-                        <li>
-                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/jmiiller">
-                                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jeff-miiller/">
-                                <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:jeffrey.miiller@gmail.com">
-                                <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="table">
+                        <ul class="horizontal-list">
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/jmiiller">
+                                    <i class="fab fa-github fa-2x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jeff-miiller/">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:jeffrey.miiller@gmail.com">
+                                    <i class="far fa-envelope fa-2x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/jmiiller">
+                                    <i class="fab fa-codepen fa-2x"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
 
             </div>
@@ -88,38 +97,129 @@
             </section>
         </section>
 
-        <footer id="footer" class="primary-footer container">
+        <section id="my-skills">
+            <section class="row-alt">
+                <div class="lead container">
+                    <h1>What I Am Learning</h1>
+                </div>
+            </section>
 
-            <div class="table">
-                <ul class="horizontal-list">
-                    <li>
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/jmiiller">
-                            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                        </a>
-                    </li>
+            <section class="row">
+                <div class="container large-devicon">
+                    <div class="col-1-5 icon-with-text">
+                        <i class="devicon-python-plain"></i>
+                        <span>Python</span>
+                    </div><!--
+                    --><div class="col-1-5 icon-with-text">
+                        <i class="devicon-django-plain"></i>
+                        <span>Django</span>
+                    </div><!--
+                    --><div class="col-1-5 icon-with-text">
+                        <i class="devicon-html5-plain"></i>
+                        <span>HTML5</span>
+                    </div><!--
+                    --><div class="col-1-5 icon-with-text">
+                        <i class="devicon-css3-plain"></i>
+                        <span>CSS3</span>
+                    </div><!--
+                    --><div class="col-1-5 icon-with-text">
+                        <i class="devicon-javascript-plain"></i>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </section>
 
-                    <li>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jeff-miiller/">
-                            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-                        </a>
-                    </li>
+            <section class="row">
+                <div class="container large-devicon">
+                    <div class="col-1-5 icon-with-text">
+                        <i class="devicon-d3js-plain"></i>
+                        <span>D3</span>
+                    </div><!--
+                    --><div class="col-1-5 icon-with-text">
+                        <i class="devicon-git-plain"></i>
+                        <span>Git</span>
+                    </div><!--
+                    --><div class="col-1-5 icon-with-text">
+                        <i class="devicon-travis-plain"></i>
+                        <span>HTML5</span>
+                    </div><!--
+                    --><div class="col-1-5 icon-with-text">
+                        <i><span class="iconify" data-icon="mdi-language-haskell" data-inline="false"></span></i>
+                        <span>Haskell</span>
+                    </div><!--
+                    --><div class="col-1-5 icon-with-text">
+                        <i class="devicon-amazonwebservices-original"></i>
+                        <span>Amazon Web Services</span>
+                    </div>
+                </div>
+            </section>
 
-                    <li>
-                        <a href="mailto:jeffrey.miiller@gmail.com">
-                            <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
-                        </a>
-                    </li>
+        </section>
 
-                </ul>
-            </div>
+        <section id="learning-backlog">
+            <section class="row-alt">
+                <div class="lead container">
+                    <h1>My Learning Backlog</h1>
+                </div>
+            </section>
 
-        </footer>
+            <section class="row large-devicon">
+                <div class="container">
+                    <div class="col-1-3 icon-with-text">
+                        <i class="devicon-react-original"></i>
+                        <span>React</span>
+                    </div><!--
+                    --><div class="col-1-3 icon-with-text">
+                        <i class="devicon-jquery-plain"></i>
+                        <span>JQuery</span>
+                    </div><!--
+                    --><div class="col-1-3 icon-with-text">
+                        <i class="devicon-bootstrap-plain"></i>
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <div class="white-border-top">
+            <footer id="footer" class="primary-footer container">
+
+                <div class="table">
+                    <ul class="horizontal-list">
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/jmiiller">
+                                <i class="fab fa-github fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jeff-miiller/">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:jeffrey.miiller@gmail.com">
+                                <i class="far fa-envelope fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/jmiiller">
+                                <i class="fab fa-codepen fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </footer>
+        </div>
 
         <script type="text/javascript">
-            ScrollReveal().reveal("#cover-page");
-            ScrollReveal().reveal("#header");
-            ScrollReveal().reveal("#about-me");
-            ScrollReveal().reveal("#footer");
+            ScrollReveal().reveal("#cover-page", {origin: "left"});
+            ScrollReveal().reveal("#header", {origin: "right"});
+            ScrollReveal().reveal("#about-me", {origin: "left"});
+            ScrollReveal().reveal("#my-skills", {origin: "right"});
+            ScrollReveal().reveal("#learning-backlog", {origin: "left"});
+            ScrollReveal().reveal("#footer", {origin: "right"});
         </script>
 
     </body>

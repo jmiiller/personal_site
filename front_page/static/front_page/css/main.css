@@ -89,22 +89,26 @@ body {
   padding-right: 30px;
 }
 
-.grid, .col-1-3, .col-2-3 {
+.grid, .col-1-3, .col-2-3, .col-1-5 {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.col-1-3, .col-2-3 {
+.col-1-3, .col-2-3, .col-1-5 {
   display: inline-block;
   vertical-align: top;
 }
 
+.col-1-5 {
+  width: 20%;
+}
+
 .col-1-3 {
-  width: 33.33%
+  width: 33.33%;
 }
 
 .col-2-3 {
-  width: 66.66%
+  width: 66.66%;
 }
 
 .table {
@@ -187,6 +191,7 @@ h5 {
 p {
   font-size: 18px;
   text-align: center;
+  line-height: 2;
 }
 
 strong {
@@ -325,7 +330,9 @@ p a {
 
 .white-border-top {
   border-top: #fff solid 2px;
+  margin-top: 44px;
 }
+
 
 /*
   ========================================
@@ -396,5 +403,28 @@ ul.horizontal-list li {
   z-index: -10;
   top: 0;
   left: 0
+}
+
+/*
+  ========================================
+  Devicon
+  ========================================
+*/
+
+.large-devicon i {
+  font-size: 80px;
+}
+
+.icon-with-text {
+  text-align: center;
+}
+
+.icon-with-text:hover {
+  color: #a16e83;
+}
+
+.icon-with-text i {
+  display: block;
+  margin: 0 auto;
 }
 
