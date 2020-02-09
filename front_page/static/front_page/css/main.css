@@ -62,7 +62,8 @@ body {
   color: #fff;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #19181A;
-  min-width: 960px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /*
@@ -142,7 +143,7 @@ body {
   ========================================
 */
 .row, .row-alt {
-  min-width: 960px;
+  width: 100%;
 }
 
 .row {
@@ -414,7 +415,7 @@ ul.horizontal-list li {
   position: fixed;
   z-index: -10;
   top: 0;
-  left: 0
+  left: 0;
 }
 
 /*
@@ -439,4 +440,3 @@ ul.horizontal-list li {
   display: block;
   margin: 0 auto 20px auto;
 }
-
