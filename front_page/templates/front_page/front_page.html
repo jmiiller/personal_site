@@ -79,6 +79,8 @@
                     <a href="#my-skills">My Skills</a>
                     <span> | </span>
                     <a href="#learning-backlog">My Learning Backlog</a>
+                    <span> | </span>
+                    <a href="#my-resume">My Resume</a>
                 </nav>
             </header>
         </div>
@@ -182,7 +184,25 @@
                     </div>
                 </div>
             </section>
+        </section>
 
+        <section id="my-resume">
+            <section class="row-alt">
+                <div class="lead container">
+                    <h1>My Resume</h1>
+                </div>
+            </section>
+
+            <section class="row large-devicon">
+                <div class="container">
+                    <div class="icon-with-text">
+                        <a target="_blank" rel="noopener noreferrer" href="{% static 'front_page/resume/jeffmiiller.pdf' %}">
+                            <i class="fas fa-file-download"></i>
+                        </a>
+                        <span>Resume</span>
+                    </div>
+                </div>
+            </section>
         </section>
 
         <div class="white-border-top">
@@ -222,7 +242,8 @@
             ScrollReveal().reveal("#about-me", {origin: "left"});
             ScrollReveal().reveal("#my-skills", {origin: "right"});
             ScrollReveal().reveal("#learning-backlog", {origin: "left"});
-            ScrollReveal().reveal("#footer", {origin: "right"});
+            ScrollReveal().reveal("#my-resume", {origin: "right"});
+            ScrollReveal().reveal("#footer", {origin: "left"});
         </script>
 
     </body>
