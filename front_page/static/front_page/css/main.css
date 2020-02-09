@@ -290,6 +290,7 @@ p a {
   text-align: center;
   display: table;
   height: 100vh;
+  position: relative;
 }
 
 .hero h2 {
@@ -305,6 +306,17 @@ p a {
 .vertically-center {
   display: table-cell;
   vertical-align: middle;
+}
+
+.down-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  display: block;
+}
+
+.down-arrow:hover {
+  color: #a16e83;
 }
 
 /*
